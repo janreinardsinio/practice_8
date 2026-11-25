@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h2>Registration Form</h2>
+        <p>Create your account by filling out the form.</p>
+
+        <form id="user-form" novalidate>
+
+            <!-- Username -->
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username">
+            <span class="error" id="username-error"></span>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter email">
+            <span class="error" id="email-error"></span>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <span class="error" id="password-error"></span>
+
+            <!-- Country -->
+            <label for="country">Country</label>
+            <select id="country">
+                <option value="">Select Country</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Japan">Japan</option>
+                <option value="South Korea">South Korea</option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <span class="error" id="country-error"></span>
+
+            <!-- Terms -->
+            <div class="terms">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the Terms and Conditions</label>
+            </div>
+
+            <span class="error" id="terms-error"></span>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+
+            <!-- Success Message -->
+            <p id="success-message"></p>
+
+        </form>
+
+    </div>
+
+    <script src="java.js"></script>
+
+</body>
+</html>
